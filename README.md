@@ -11,9 +11,8 @@
 | lastname_katakana    | string | null: false |
 | email                | string | null: false |
 | password             | string | null: false |
-| birthday_year        | string | null: false |
-| birthday_month       | string | null: false |
-| birthday_day         | string | null: false |
+| encrypted_password   | string | null: false |
+| birthday             | date   | null: false |
 
 
 ### Association
@@ -26,15 +25,14 @@
 | Column          | Type       | Options     |
 | ----------------| ---------  | ------------------------------ |
 | name            | string     | null: false                    |
-| image           | text       | null: false                    |
 | explanation     | text       | null: false                    |
-| category        | string     | null: false                    |
-| status          | string     | null: false                    |
-| delivery_fee    | string     | null: false                    |
-| delivery_area   | string     | null: false                    |
-| delivery_day    | string     | null: false                    |
+| category_id     | integer    | null: false                    |
+| status_id       | integer    | null: false                    |
+| delivery_fee    | integer    | null: false                    |
+| delivery_area   | integer    | null: false                    |
+| delivery_day    | integer    | null: false                    |
 | price           | integer    | null: false                    |
-| user_id         | references | null: false, foreign_key: true |
+| user            | references | null: false, foreign_key: true |
 
 
 
@@ -49,11 +47,11 @@
 | Column                   | Type       | Options                        |
 | -------------------------| ---------- | ------------------------------ |
 | postal_code              | string     | null: false                    |
-| prefecture               | integer    | null: false                    |
+| prefecture_id            | integer    | null: false                    |
 | city                     | string     | null: false                    |
 | house_number             | string     | null: false                    |
 | phone_number             | string     | null: false                    |
-| record_id                | references | null: false, foreign_key: true |
+| record                   | references | null: false, foreign_key: true |
 
 
 ### Association
@@ -64,9 +62,9 @@
 
 | Column     | Type       | Options                        |
 | -----------| ---------- | ------------------------------ |
-| consumer   | string     | null: false                    |
-| when       | references | null: false                    |
-| item_id    | references | null: false, foreign_key: true |
+| user       | references | null: false, foreign_key: true |
+| item       | references | null: false, foreign_key: true |
+| when       | date       | null: false                    |
 
 ### Association
 
