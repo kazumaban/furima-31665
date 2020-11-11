@@ -1,11 +1,21 @@
+<<<<<<< Updated upstream
 <mxfile host="65bd71144e" modified="2020-11-11T06:48:01.168Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.0 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="e2WWzESa_0Si5jJjwTEd" version="13.6.5">
     <diagram id="ySOrBruCpusgFEodsGVY" name="ページ1">
         <mxGraphModel dx="290" dy="148" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+=======
+<mxfile host="65bd71144e" modified="2020-11-11T07:02:58.005Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.0 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="asTiZ2ORvTbt6MexXw4E" version="13.6.5">
+    <diagram id="ySOrBruCpusgFEodsGVY" name="ページ1">
+        <mxGraphModel dx="209" dy="158" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+>>>>>>> Stashed changes
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="users" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+<<<<<<< Updated upstream
                     <mxGeometry x="80" y="40" width="160" height="310" as="geometry"/>
+=======
+                    <mxGeometry x="80" y="40" width="160" height="280" as="geometry"/>
+>>>>>>> Stashed changes
                 </mxCell>
                 <mxCell id="30" value="nickname" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="2" vertex="1">
                     <mxGeometry y="40" width="160" height="30" as="geometry"/>
@@ -25,6 +35,7 @@
                 <mxCell id="4" value="email" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="2" vertex="1">
                     <mxGeometry y="190" width="160" height="30" as="geometry"/>
                 </mxCell>
+<<<<<<< Updated upstream
                 <mxCell id="5" value="password" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="2" vertex="1">
                     <mxGeometry y="220" width="160" height="30" as="geometry"/>
                 </mxCell>
@@ -33,6 +44,13 @@
                 </mxCell>
                 <mxCell id="24" value="birthday" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="2" vertex="1">
                     <mxGeometry y="280" width="160" height="30" as="geometry"/>
+=======
+                <mxCell id="52" value="encrypted_password" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="2">
+                    <mxGeometry y="220" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="birthday" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="2" vertex="1">
+                    <mxGeometry y="250" width="160" height="30" as="geometry"/>
+>>>>>>> Stashed changes
                 </mxCell>
                 <mxCell id="11" value="items" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="440" y="40" width="160" height="296" as="geometry"/>
@@ -97,7 +115,11 @@
                 <mxCell id="51" value="record_id" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="19">
                     <mxGeometry y="176" width="160" height="30" as="geometry"/>
                 </mxCell>
+<<<<<<< Updated upstream
                 <mxCell id="44" value="" style="endArrow=ERone;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;startArrow=ERoneToMany;startFill=0;" parent="1" source="15" edge="1">
+=======
+                <mxCell id="44" value="" style="endArrow=ERone;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;startArrow=ERoneToMany;startFill=0;entryX=0.5;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="15" edge="1" target="24">
+>>>>>>> Stashed changes
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="370" y="550" as="sourcePoint"/>
                         <mxPoint x="160" y="380" as="targetPoint"/>

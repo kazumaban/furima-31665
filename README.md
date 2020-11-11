@@ -10,7 +10,6 @@
 | firstname_katakana   | string | null: false |
 | lastname_katakana    | string | null: false |
 | email                | string | null: false |
-| password             | string | null: false |
 | encrypted_password   | string | null: false |
 | birthday             | date   | null: false |
 
