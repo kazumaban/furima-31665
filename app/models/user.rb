@@ -14,5 +14,7 @@ class User < ApplicationRecord
     validates :firstname_katakana, format: { with: /\A[ァ-ヶー－]+\z/, message: 'is invalid. Input full-width katakana characters.' }
     validates :lastname_katakana, format: { with: /\A[ァ-ヶー－]+\z/, message: 'is invalid. Input full-width katakana characters.' }
     validates :birthday
+    validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i , message: 'is invalid. Password Include both letters and numbers.'}
   end
 end
+
