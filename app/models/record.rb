@@ -1,12 +1,12 @@
 class Record < ApplicationRecord
-  belongs_to :user
-  belongs_to :item
-  has_one :address
+  #belongs_to :user
+  #belongs_to :item
+  #has_one :address
 
-  with_options presence: true do
-    validates :user
-    validates :item
-  end
+  #with_options presence: true do
+    #validates :user
+    #validates :item
+  #end
 
 end
 
