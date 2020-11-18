@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :move_to_index, except: [:index]
 
   def index
     @items = Item.order("created_at DESC")
@@ -15,6 +15,12 @@ class ItemsController < ApplicationController
       redirect_to root_path
     else
       render :new
+    end
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to user_session_path
     end
   end
 
