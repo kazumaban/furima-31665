@@ -2,7 +2,6 @@ class ItemsController < ApplicationController
   before_action :move_to_index, except: [:index]
 
   def index
-    @item = Item.all
     @item = Item.order("created_at DESC")
   end
 
@@ -16,6 +15,13 @@ class ItemsController < ApplicationController
       redirect_to root_path
     else
       render :new
+    end
+  end
+
+  def destroy
+    prototype = Item.find(params[:id])
+    if item.destroy
+    redirect_to root_path
     end
   end
 
