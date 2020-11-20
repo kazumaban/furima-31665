@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   before_action :move_to_index, except: [:index]
 
   def index
-    @item = Item.order("created_at DESC")
+    @items = Item.order("created_at DESC")
   end
 
   def new
@@ -17,6 +17,13 @@ class ItemsController < ApplicationController
       render :new
     end
   end
+
+  #def destroy
+    #@item = Item.find(params[:id])
+    #if item.destroy
+    #redirect_to root_path
+    #end
+  #end
 
   def move_to_index
     unless user_signed_in?
