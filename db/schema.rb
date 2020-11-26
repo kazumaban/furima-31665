@@ -39,10 +39,11 @@ ActiveRecord::Schema.define(version: 2020_11_16_092926) do
     t.integer "city", null: false
     t.integer "house_number", null: false
     t.integer "building_name"
-    t.integer "phone_number", null: false
-    t.integer "record", null: false
+    t.string "phone_number", null: false
+    t.bigint "record_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["record_id"], name: "index_addresses_on_record_id"
   end
 
   create_table "articles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -96,6 +97,7 @@ ActiveRecord::Schema.define(version: 2020_11_16_092926) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "addresses", "records"
   add_foreign_key "items", "users"
   add_foreign_key "records", "items"
   add_foreign_key "records", "users"
